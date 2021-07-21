@@ -1,0 +1,24 @@
+todo ==========================================================
+  feature selection (iterative search)
+    univariate feature selection (SelectKBest, chi2)
+    recursive feature elimination (RFE)
+    sequential feature selection
+    select from model
+    permutation importance measure variable's importance
+
+  unbalancement
+    raising threshold lowers positive labes (FP and TP)
+    oversampling (SMOTE)
+    roc, auc
+
+  test 7 anni
+  MLP, KNN, Gradient boosting (gradient learn) are no subject to unbalanced
+  SVC and RF sono soggetti a unbalancement
+  lifelines: cox regression p-values per tutte le variabili, usato dai medici per convincerli
+
+
+done ==========================================================
+  visualize PCA, T-SNE: T-SNE shows a subtle division between healthy and sick patients
+  undersampling: helps a little to reduce FP
+  feature scaling: standardization helps to increase a bit F1-macro
+  penalized model: helps to reduce FP!
