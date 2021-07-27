@@ -1,24 +1,31 @@
 todo ==========================================================
-  feature selection (iterative search)
-    univariate feature selection (SelectKBest, chi2)
+  feature selection
     recursive feature elimination (RFE)
-    sequential feature selection
-    select from model
+    sequential feature selection (SFS)
+    select from model using feature importance
     permutation importance measure variable's importance
 
-  unbalancement
-    raising threshold lowers positive labes (FP and TP)
-    oversampling (SMOTE)
-    roc, auc
+  visualize the wrong classified data (visualize the worst)
+  test X years, raising years make the data more balanced
+  lifelines library: uni/multivariate cox model is used to find the important predictors
 
-  test 7 anni
-  MLP, KNN, Gradient boosting (gradient learn) are no subject to unbalanced
-  SVC and RF sono soggetti a unbalancement
-  lifelines: cox regression p-values per tutte le variabili, usato dai medici per convincerli
+  1. select metric: predict probabilities or labels
+    - AUC, is positive or negative class more important? PR AUC when positive class is most important
+    - F2 if false negatives are more costly, F0.5 opposite
+  2. check ml algorithms
+  3. check unbalanced algorithms
+  3. hyperparameter tuning
 
 
 done ==========================================================
+  feature selection
+    univariate feature selection (SelectKBest, chi2)
+
+  unbalancement
+    predicting probs and modifying threshold controls the FP, FN 
+    undersampling, oversampling (SMOTE): helps to reduce FP as penalized models!
+    penalized model: helps to reduce FP!
+    f1, auc, balanced accuracy
+
   visualize PCA, T-SNE: T-SNE shows a subtle division between healthy and sick patients
-  undersampling: helps a little to reduce FP
   feature scaling: standardization helps to increase a bit F1-macro
-  penalized model: helps to reduce FP!
