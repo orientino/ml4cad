@@ -1,4 +1,8 @@
 todo ==========================================================
+    overfit on training set to check 
+    report also training metrics
+    check wether the same samples are wrong on all the classifiers or not
+
   feature selection
     recursive feature elimination (RFE)
     sequential feature selection (SFS)
@@ -8,6 +12,9 @@ todo ==========================================================
   visualize the wrong classified data (visualize the worst)
   test X years, raising years make the data more balanced
   lifelines library: uni/multivariate cox model is used to find the important predictors
+  
+  add dropped samples to the validation set
+  try adaboost, gtb
 
   1. select metric: predict probabilities or labels
     - AUC, is positive or negative class more important? PR AUC when positive class is most important
