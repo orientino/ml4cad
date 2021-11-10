@@ -1,11 +1,11 @@
 todo ==========================================================
-  check wether the same samples are wrong on all the classifiers or not
-    if they are not we can use a different classifiers for each subset
-
-  remove outliers
   visualize the wrong classified data (visualize the worst)
   lifelines library: uni/multivariate cox model is used to find the important predictors
-  
+
+  diagnosis groups: 
+    Post-ischemic, AMI, PMI, CABG, PCI, Angina, Aritmie 
+  Medicine effect on the model's outcome, changing the terapies to assess the effects
+
 
 done ==========================================================
   ensemble: improves the best score by 2%
