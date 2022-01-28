@@ -1,13 +1,13 @@
 todo ==========================================================
-  visualize the wrong classified data (visualize the worst)
-  lifelines library: uni/multivariate cox model is used to find the important predictors
-
-  diagnosis groups: 
-    Post-ischemic, AMI, PMI, CABG, PCI, Angina, Aritmie 
   Medicine effect on the model's outcome, changing the terapies to assess the effects
 
 
 done ==========================================================
+  visualize the wrong classified data (visualize the worst)
+  lifelines library: uni/multivariate cox model is used to find the important predictors
+
+  diagnosis groups: Post-ischemic, AMI, PMI, CABG, PCI, Angina, Aritmie 
+
   ensemble: improves the best score by 2%
 
   test 7 years, raising years make the data more balanced: no improvements
@@ -35,5 +35,3 @@ steps =========================================================
   2. check ml algorithms
   3. check unbalanced algorithms
   4. hyperparameter tuning
-
-

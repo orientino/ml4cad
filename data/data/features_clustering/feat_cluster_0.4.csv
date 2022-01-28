@@ -1,0 +1,72 @@
+,correlated_columns
+Age (1),[]
+Gender (Male = 1),[]
+Angina,['Documented resting \nor exertional ischemia']
+Previous CABG,[]
+Previous PCI,[]
+"Previous 
+Myocardial Infarction",['CAD']
+"Acute 
+Myocardial Infarction",[]
+Vessels,['CAD' 'Documented resting \nor exertional ischemia']
+CAD,"['Previous \nMyocardial Infarction' 'Vessels'
+ 'Documented resting \nor exertional ischemia']"
+"Smoke
+History of smoke",[]
+"Diabetes
+History of diabetes",['Glycemia']
+"Hypertension
+History of hypertension",['Ipertensione']
+"Dyslipidemia
+Hystory of dyslipidemia",[]
+Family history of CAD,[]
+"Obesity
+History of obesity",['BMI']
+"Documented resting 
+or exertional ischemia",['CAD' 'Vessels' 'Angina']
+"Post-ischemic Dilated
+Cardiomyopathy",['WmsiBas' 'fe' 'vsx']
+"Primary Dilated
+Cardiomyopathy",['fe' 'WmsiBas' 'vsx']
+Atrial Fibrillation,['Aritmie' 'Paroxysmal atrial fibrillation']
+Paroxysmal atrial fibrillation,['Atrial Fibrillation']
+Total cholesterol,['LDL']
+HDL,[]
+LDL,['Total cholesterol']
+Triglycerides,[]
+Glycemia,['Diabetes\nHistory of diabetes']
+TSH,['Ipotiroidismo']
+fT3,['Ipertiroidismo' 'fT4']
+fT4,['Ipertiroidismo' 'fT3']
+Euthyroid,['Low T3' 'Subclinical primary hypothyroidism (SCH)']
+Subclinical primary hypothyroidism (SCH),['Euthyroid']
+"Subclinical primary hyperthyroidism
+(SCT)",[]
+Low T3,['Euthyroid']
+Ipotiroidismo,['TSH']
+Ipertiroidismo,['fT3' 'fT4']
+Normal,[]
+SindromeX,[]
+Aritmie,['Atrial Fibrillation']
+MIO/MIN,[]
+Miocardite,[]
+Pericardite,[]
+Endocardite,[]
+Valvulopatie,[]
+MalattiaVasoAorta,[]
+Ipertensione,['Hypertension\nHistory of hypertension']
+CardiopatiaCongenita,[]
+EmboliaPolmonare,[]
+EPA,[]
+HR,[]
+BMI,['Obesity\nHistory of obesity']
+Diastolic blood pressure,['Systolic blood pressure']
+Systolic blood pressure,['Diastolic blood pressure']
+WmsiBas,"['fe' 'Post-ischemic Dilated\nCardiomyopathy' 'vsx'
+ 'Primary Dilated\nCardiomyopathy']"
+DimSettoIV,['DimParPost']
+DimParPost,['DimSettoIV']
+fe,"['WmsiBas' 'vsx' 'Post-ischemic Dilated\nCardiomyopathy'
+ 'Primary Dilated\nCardiomyopathy']"
+vsx,"['fe' 'WmsiBas' 'Primary Dilated\nCardiomyopathy'
+ 'Post-ischemic Dilated\nCardiomyopathy']"
