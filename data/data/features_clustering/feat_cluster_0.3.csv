@@ -1,75 +1,100 @@
 ,correlated_columns
-Age (1),[]
-Gender (Male = 1),['HDL']
-Angina,['Documented resting \nor exertional ischemia' 'CAD']
-Previous CABG,[]
-Previous PCI,['Previous \nMyocardial Infarction' 'CAD']
+Age (1),Age (1)
+Gender (Male = 1),"Gender (Male = 1),HDL"
+Angina,"Angina,Documented resting 
+or exertional ischemia,CAD"
+Previous CABG,Previous CABG
+Previous PCI,"Previous PCI,Previous 
+Myocardial Infarction,CAD"
 "Previous 
-Myocardial Infarction",['CAD' 'Previous PCI' 'Post-ischemic Dilated\nCardiomyopathy' 'WmsiBas']
+Myocardial Infarction","Previous 
+Myocardial Infarction,CAD,Previous PCI,Post-ischemic Dilated
+Cardiomyopathy,WmsiBas"
 "Acute 
-Myocardial Infarction",[]
-Vessels,['CAD' 'Documented resting \nor exertional ischemia']
-CAD,"['Previous \nMyocardial Infarction' 'Vessels'
- 'Documented resting \nor exertional ischemia'
- 'Dyslipidemia\nHystory of dyslipidemia' 'Previous PCI' 'Angina' 'Aritmie'
- 'Primary Dilated\nCardiomyopathy']"
+Myocardial Infarction","Acute 
+Myocardial Infarction"
+Vessels,"Vessels,CAD,Documented resting 
+or exertional ischemia"
+CAD,"CAD,Previous 
+Myocardial Infarction,Vessels,Documented resting 
+or exertional ischemia,Dyslipidemia
+Hystory of dyslipidemia,Previous PCI,Angina,Aritmie,Primary Dilated
+Cardiomyopathy"
 "Smoke
-History of smoke",[]
+History of smoke","Smoke
+History of smoke"
 "Diabetes
-History of diabetes",['Glycemia']
+History of diabetes","Diabetes
+History of diabetes,Glycemia"
 "Hypertension
-History of hypertension",['Ipertensione' 'Systolic blood pressure']
+History of hypertension","Hypertension
+History of hypertension,Ipertensione,Systolic blood pressure"
 "Dyslipidemia
-Hystory of dyslipidemia",['CAD']
-Family history of CAD,[]
+Hystory of dyslipidemia","Dyslipidemia
+Hystory of dyslipidemia,CAD"
+Family history of CAD,Family history of CAD
 "Obesity
-History of obesity",['BMI']
+History of obesity","Obesity
+History of obesity,BMI"
 "Documented resting 
-or exertional ischemia",['CAD' 'Vessels' 'Angina' 'Aritmie']
+or exertional ischemia","Documented resting 
+or exertional ischemia,CAD,Vessels,Angina,Aritmie"
 "Post-ischemic Dilated
-Cardiomyopathy",['WmsiBas' 'fe' 'vsx' 'Previous \nMyocardial Infarction']
+Cardiomyopathy","Post-ischemic Dilated
+Cardiomyopathy,WmsiBas,fe,vsx,Previous 
+Myocardial Infarction"
 "Primary Dilated
-Cardiomyopathy",['fe' 'WmsiBas' 'vsx' 'CAD']
-Atrial Fibrillation,['Aritmie' 'Paroxysmal atrial fibrillation']
-Paroxysmal atrial fibrillation,['Atrial Fibrillation']
-Total cholesterol,['LDL' 'HDL' 'Triglycerides']
-HDL,['Total cholesterol' 'Gender (Male = 1)']
-LDL,['Total cholesterol']
-Triglycerides,['Total cholesterol']
-Glycemia,['Diabetes\nHistory of diabetes']
-TSH,['Ipotiroidismo']
-fT3,['Ipertiroidismo' 'fT4' 'Low T3']
-fT4,['Ipertiroidismo' 'fT3']
-Euthyroid,['Low T3' 'Subclinical primary hypothyroidism (SCH)']
-Subclinical primary hypothyroidism (SCH),['Euthyroid']
+Cardiomyopathy","Primary Dilated
+Cardiomyopathy,fe,WmsiBas,vsx,CAD"
+Atrial Fibrillation,"Atrial Fibrillation,Aritmie,Paroxysmal atrial fibrillation"
+Paroxysmal atrial fibrillation,"Paroxysmal atrial fibrillation,Atrial Fibrillation"
+Total cholesterol,"Total cholesterol,LDL,HDL,Triglycerides"
+HDL,"HDL,Total cholesterol,Gender (Male = 1)"
+LDL,"LDL,Total cholesterol"
+Triglycerides,"Triglycerides,Total cholesterol"
+Glycemia,"Glycemia,Diabetes
+History of diabetes"
+TSH,"TSH,Ipotiroidismo"
+fT3,"fT3,Ipertiroidismo,fT4,Low T3"
+fT4,"fT4,Ipertiroidismo,fT3"
+Euthyroid,"Euthyroid,Low T3,Subclinical primary hypothyroidism (SCH)"
+Subclinical primary hypothyroidism (SCH),"Subclinical primary hypothyroidism (SCH),Euthyroid"
 "Subclinical primary hyperthyroidism
-(SCT)",[]
-Low T3,['Euthyroid' 'fT3']
-Ipotiroidismo,['TSH']
-Ipertiroidismo,['fT3' 'fT4']
-Normal,[]
-SindromeX,[]
-Aritmie,['Atrial Fibrillation' 'Documented resting \nor exertional ischemia' 'CAD']
-MIO/MIN,['DimSettoIV']
-Miocardite,[]
-Pericardite,[]
-Endocardite,[]
-Valvulopatie,[]
-MalattiaVasoAorta,[]
-Ipertensione,['Hypertension\nHistory of hypertension' 'Systolic blood pressure']
-CardiopatiaCongenita,[]
-EmboliaPolmonare,[]
-EPA,[]
-HR,[]
-BMI,['Obesity\nHistory of obesity']
-Diastolic blood pressure,['Systolic blood pressure']
-Systolic blood pressure,"['Diastolic blood pressure' 'Ipertensione'
- 'Hypertension\nHistory of hypertension']"
-WmsiBas,"['fe' 'Post-ischemic Dilated\nCardiomyopathy' 'vsx'
- 'Primary Dilated\nCardiomyopathy' 'Previous \nMyocardial Infarction']"
-DimSettoIV,['DimParPost' 'MIO/MIN']
-DimParPost,['DimSettoIV']
-fe,"['WmsiBas' 'vsx' 'Post-ischemic Dilated\nCardiomyopathy'
- 'Primary Dilated\nCardiomyopathy']"
-vsx,"['fe' 'WmsiBas' 'Primary Dilated\nCardiomyopathy'
- 'Post-ischemic Dilated\nCardiomyopathy']"
+(SCT)","Subclinical primary hyperthyroidism
+(SCT)"
+Low T3,"Low T3,Euthyroid,fT3"
+Ipotiroidismo,"Ipotiroidismo,TSH"
+Ipertiroidismo,"Ipertiroidismo,fT3,fT4"
+Normal,Normal
+SindromeX,SindromeX
+Aritmie,"Aritmie,Atrial Fibrillation,Documented resting 
+or exertional ischemia,CAD"
+MIO/MIN,"MIO/MIN,DimSettoIV"
+Miocardite,Miocardite
+Pericardite,Pericardite
+Endocardite,Endocardite
+Valvulopatie,Valvulopatie
+MalattiaVasoAorta,MalattiaVasoAorta
+Ipertensione,"Ipertensione,Hypertension
+History of hypertension,Systolic blood pressure"
+CardiopatiaCongenita,CardiopatiaCongenita
+EmboliaPolmonare,EmboliaPolmonare
+EPA,EPA
+HR,HR
+BMI,"BMI,Obesity
+History of obesity"
+Diastolic blood pressure,"Diastolic blood pressure,Systolic blood pressure"
+Systolic blood pressure,"Systolic blood pressure,Diastolic blood pressure,Ipertensione,Hypertension
+History of hypertension"
+WmsiBas,"WmsiBas,fe,Post-ischemic Dilated
+Cardiomyopathy,vsx,Primary Dilated
+Cardiomyopathy,Previous 
+Myocardial Infarction"
+DimSettoIV,"DimSettoIV,DimParPost,MIO/MIN"
+DimParPost,"DimParPost,DimSettoIV"
+fe,"fe,WmsiBas,vsx,Post-ischemic Dilated
+Cardiomyopathy,Primary Dilated
+Cardiomyopathy"
+vsx,"vsx,fe,WmsiBas,Primary Dilated
+Cardiomyopathy,Post-ischemic Dilated
+Cardiomyopathy"
