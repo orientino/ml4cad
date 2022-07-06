@@ -1,0 +1,8 @@
+,cluster,auroc,f1_macro
+0,"['Gender (Male = 1)', 'Age', 'Smoke\nHistory of smoke', 'Creatinina']",0.789,0.689
+1,"['Diabetes\nHistory of diabetes', 'Hypertension\nHistory of hypertension']",0.82,0.672
+2,"['Hyperlipemia\nHistoty of hyperlipemia', 'Paroxysmal or chronic \natrial fibrillation']",0.807,0.584
+3,"['FE', 'Post-ischemic Dilated\nCardiomyopathy']",0.769,0.659
+4,"['Angina', 'Acute Myocardial Infarction', 'Documented resting \nor exertional ischemia']",0.829,0.702
+5,"['Previous PCI', 'Previous Myocardial Infarction']",0.826,0.684
+6,"['Previous CABG', 'Angiography', 'Vessels']",0.823,0.671

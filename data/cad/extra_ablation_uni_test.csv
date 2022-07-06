@@ -1,0 +1,26 @@
+,auroc,f1_macro
+Gender (Male = 1),0.827,0.714
+Age,0.813,0.725
+Angina,0.831,0.729
+Previous CABG,0.828,0.697
+Previous PCI,0.829,0.716
+Previous Myocardial Infarction,0.825,0.69
+Acute Myocardial Infarction,0.83,0.722
+Angiography,0.829,0.716
+Vessels,0.829,0.711
+FE,0.77,0.656
+"Documented resting 
+or exertional ischemia",0.83,0.714
+"Post-ischemic Dilated
+Cardiomyopathy",0.831,0.718
+"Smoke
+History of smoke",0.829,0.71
+"Diabetes
+History of diabetes",0.824,0.687
+"Hypertension
+History of hypertension",0.83,0.718
+"Hyperlipemia
+Histoty of hyperlipemia",0.808,0.636
+"Paroxysmal or chronic 
+atrial fibrillation",0.829,0.695
+Creatinina,0.828,0.713
