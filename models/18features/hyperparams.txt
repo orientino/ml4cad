@@ -1,0 +1,70 @@
+LR = {
+    'dual': [True, False],
+    'warm_start': [True, False],
+    'C': stats.randint(1, 10),
+    'max_iter': stats.randint(50, 500),
+    'solver': ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga'],
+}
+
+SVC = {
+    'C': stats.randint(1, 200),
+    'kernel': ['rbf', 'poly', 'sigmoid'],
+    'degree': stats.randint(1, 200),
+    'gamma': ['scale', 'auto'],
+    'coef0': stats.uniform(0.0, 1.0),
+    'max_iter': stats.randint(10, 1000)
+}
+
+k-NN = {
+    'n_neighbors': stats.randint(2, 100),
+    'weights': ('uniform', 'distance'),
+    'algorithm': ('ball_tree', 'kd_tree'),
+    'leaf_size': stats.randint(10, 60)
+}
+
+RF = {
+    'n_estimators': stats.randint(10, 200),
+    'criterion': ('gini', 'entropy'),
+    'min_samples_split': stats.randint(1, 10),
+    'min_samples_leaf': stats.randint(1, 10),
+    'max_features': ('sqrt', 'log2', None),
+    'class_weight': ['balanced', 'balanced_subsample']
+}
+
+Adaboost = {
+    'n_estimators': stats.randint(10, 100),
+    'learning_rate': stats.uniform(0.1, 1)
+}
+
+NN = {
+    'hidden_layer_sizes': [
+        [stats.randint.rvs(50, 300), stats.randint.rvs(50, 300)],
+        [stats.randint.rvs(50, 300), stats.randint.rvs(50, 300), stats.randint.rvs(50, 300)]
+    ],
+    'solver': ['sgd', 'adam'],
+    'learning_rate_init': stats.uniform(0.0005, 0.005),
+    'learning_rate': ('constant', 'adaptive'),
+    'alpha': stats.uniform(0, 1),
+    'early_stopping': [True],
+    'max_iter': [500]
+}
+
+GB = {
+    'learning_rate': stats.uniform(0.01, 0.2),
+    'n_estimators': stats.randint(10, 100),
+    'max_depth': stats.randint(2, 6),
+    'max_features': ('sqrt', 'log2', None),
+    'subsample': (0.25, 0.5, 0.75, 1)
+}
+
+XGB = {
+    'booster': ['gbtree', 'gblinear', 'dart'],
+    'eta': stats.uniform(0.05, 0.5),
+    'gamma': stats.uniform(0, 0.2),
+    'max_depth': [2, 3, 4, 6],
+    'n_estimators': stats.randint(10, 100),
+    'subsample': [0.25, 0.5, 0.75, 1],   
+    'lambda': stats.uniform(0.5, 1.5),    
+    'alpha': stats.uniform(0, 0.5),        
+    'scale_pos_weight': [0.2, 0.4, 0.8, 1, 2]
+}
